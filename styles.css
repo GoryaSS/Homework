@@ -1,0 +1,63 @@
+html{
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	height: 100%;
+	display: flex; 
+	flex-direction: column;
+}
+main{
+	 min-height: 100%;
+	 flex: 1 0 auto;
+}
+.footer-background {
+	background-color: #121116; 
+	width: 100%;
+	height: auto; 
+	font-family: 'Open Sans', sans-serif; 
+	text-align: center;
+}
+.logo {
+	height: 36px;
+	padding-top: 30px; 
+	padding-bottom: 60px;
+}
+.social {
+	margin-bottom: 85px;
+}
+.text{
+	font-size: 20px; 
+	font-weight: normal; 
+	color: #ffffff;
+}
+
+hr{
+	margin-bottom: 20px;
+	width: 230px; 
+	color: #ffffff;
+}
+
+nav li{
+	display: inline; 
+	padding: 18px;
+	transition: opasity ease-in-out 1.5s; /*не робить*/
+}
+li a:hover{	
+	opacity: 0.5;
+}
+
+.copyright{
+	margin-bottom: 37px;
+	font-size: 15px; 
+	color: #ffffff;
+}
+.kasper-link{
+	text-decoration: none; 
+	color: #00c7fc;
+}
+.kasper-link:hover{	
+	color: #e57bff;
+	opacity: 0.7;
+}
