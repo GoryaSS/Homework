@@ -1,59 +1,47 @@
-//========== VAR 1 - alert ==========
+// -------------- 1 -------------
 
-let yourAge = prompt('Input here Your age', 0);
-let massage = (yourAge <= 12) ? 'You are a child, what are you doing here?' :
-    (yourAge <= 18) ? 'You are a tinager' :
-    (yourAge < 60) ? 'You are an adult' :
-    'Are You retired or probably dead?';
-alert(massage);
+// let firtNumber = 0.1;
+// let secondNumber = 0.2;
+// let sum = (firtNumber + secondNumber);
+// console.log(sum);
+// console.log(typeof sum);
 
-//========== VAR 2 - alert ==========
+// -------------- 2 -------------
 
-// let yourAge = prompt('Input here Your age', 0);
-// if (yourAge >= 0 && yourAge < 12) {
-//     alert('You are a child, what are you doing here?');
-// } else if (yourAge >= 12 && yourAge < 18) {
-//     alert('You are a tinager');
-// } else if (yourAge >= 18 && yourAge < 60) {
-//     alert('You are an adult');
-// } else if (yourAge >= 60) {
-//     alert('Are You retired or probably dead?');
+// let firtNumber = "1";
+// let secondNumber = 2;
+// let sum = (+firtNumber + secondNumber);
+// console.log(sum);
+// console.log(typeof sum);
+
+// -------------- 3 -------------
+// грубий аналог використання Math.floor
+
+// let memory = prompt('Enter memory size in Gb', 8);
+// let fileSize = 0.82;
+// alert(~~(memory / fileSize));
+
+// -------------- 4 -------------
+// грубий аналог використання Math.floor
+// let cashAmounth = prompt('How many money do You have?', 8);
+// let chocolateСost = 1.280;
+// let textPre = "You can bay ";
+// let chocolateAmount = ~~(cashAmounth / chocolateСost);
+// let textAfter = " chocolates \nand you will have ";
+// let cashBalance = (cashAmounth - chocolateAmount * chocolateСost);
+// alert(textPre + chocolateAmount + textAfter + cashBalance + ' USD');
+
+// -------------- 5 -------------
+// стирено...
+// let x = 592;
+// let y = 0;
+// for(; x; x = Math.floor(x / 10)) {
+//     y *= 10;
+//     y += x % 10;
 // }
 
-//========== VAR 3 - console.log ==========
+// console.log(y);
 
-// let yourAge = (70);
-// if (yourAge >= 0 && yourAge < 12) {
-//     console.log('You are a child, what are you doing here?');
-// }
-// else
-// {
-//     if (yourAge >= 12 && yourAge < 18)
-//     console.log('You are a tinager');
-   
-//     else
-//     {
-//         if (yourAge >= 18 && yourAge < 60)
-//         console.log('You are an adult');
-        
-//         else
-//         {
-//             if (yourAge >= 60)
-//             console.log('Are You retired or probably dead?');
-    
-//         }
-//     }
-// }
-    
-//========== VAR 4 - console.log ==========
+// -------------- 6 -------------
 
-// let yourAge = (10);
-// if (yourAge >= 0 && yourAge < 12) {
-//     console.log('You are a child, what are you doing here?');
-// } else if (yourAge >= 12 && yourAge < 18) {
-//     console.log('You are a tinager');
-// } else if (yourAge >= 18 && yourAge < 60) {
-//     console.log('You are an adult');
-// } else if (yourAge >= 60) {
-//     console.log('Are You retired or probably dead?');
-// }
+
