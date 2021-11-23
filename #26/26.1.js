@@ -49,7 +49,7 @@
 // midleNumber = number % 10;
 // number -= midleNumber;
 // number /= 10;
-// console.log(String(lastNumber) + midleNumber + number);
+// console.log(Number(String(lastNumber) + midleNumber + number));
 
 
 
