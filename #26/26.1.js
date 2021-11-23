@@ -6,6 +6,8 @@
 // console.log(sum);
 // console.log(typeof sum);
 
+
+
 // -------------- 2 -------------
 
 // let firtNumber = "1";
@@ -14,6 +16,8 @@
 // console.log(sum);
 // console.log(typeof sum);
 
+
+
 // -------------- 3 -------------
 // грубий аналог використання Math.floor
 
@@ -21,8 +25,11 @@
 // let fileSize = 0.82;
 // alert(~~(memory / fileSize));
 
+
+
 // -------------- 4 -------------
 // грубий аналог використання Math.floor
+
 // let cashAmounth = prompt('How many money do You have?', 8);
 // let chocolateСost = 1.280;
 // let textPre = "You can bay ";
@@ -31,16 +38,20 @@
 // let cashBalance = (cashAmounth - chocolateAmount * chocolateСost);
 // alert(textPre + chocolateAmount + textAfter + cashBalance + ' USD');
 
-// -------------- 5 -------------
-// стирено...
-// let x = 592;
-// let y = 0;
-// for(; x; x = Math.floor(x / 10)) {
-//     y *= 10;
-//     y += x % 10;
-// }
 
-// console.log(y);
+
+// -------------- 5 -------------
+
+// let number = 598;
+// lastNumber = number % 10;
+// number -= lastNumber;
+// number /= 10;
+// midleNumber = number % 10;
+// number -= midleNumber;
+// number /= 10;
+// console.log(String(lastNumber) + midleNumber + number);
+
+
 
 // -------------- 6 -------------
 
