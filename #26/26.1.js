@@ -55,4 +55,7 @@
 
 // -------------- 6 -------------
 
-
+// let deposit = 598;
+// let anualRate = 5;
+// let monthlyRate = anualRate / 100 / 12; 
+// console.log(monthlyRate * deposit * 2);
