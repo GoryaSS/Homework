@@ -3,18 +3,16 @@
 // let firtNumber = 0.1;
 // let secondNumber = 0.2;
 // let sum = (firtNumber + secondNumber);
-// console.log(sum);
-// console.log(typeof sum);
+// console.log(sum.toFixed(1));
 
 
 
 // -------------- 2 -------------
 
-// let firtNumber = "1";
-// let secondNumber = 2;
-// let sum = (+firtNumber + secondNumber);
-// console.log(sum);
-// console.log(typeof sum);
+let firtNumber = 111;
+let secondNumber = 2;
+let sum = (+firtNumber + secondNumber);
+console.log(sum.toFixed(1));
 
 
 
