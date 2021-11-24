@@ -1,11 +1,11 @@
 //========== VAR 1 - alert ==========
 
-let yourAge = prompt('Input here Your age', 0);
-let massage = (yourAge <= 12) ? 'You are a child, what are you doing here?' :
-    (yourAge <= 18) ? 'You are a tinager' :
-    (yourAge < 60) ? 'You are an adult' :
-    'Are You retired or probably dead?';
-alert(massage);
+// let yourAge = prompt('Input here Your age', 0);
+// let massage = (yourAge <= 12) ? 'You are a child, what are you doing here?' :
+//     (yourAge <= 18) ? 'You are a tinager' :
+//     (yourAge < 60) ? 'You are an adult' :
+//     'Are You retired or probably dead?';
+// alert(massage);
 
 //========== VAR 2 - alert ==========
 
