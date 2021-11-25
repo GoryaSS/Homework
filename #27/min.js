@@ -22,8 +22,15 @@
 //     ')' ;
 // console.log(simbol);
 
-// --------------- 3 ---------------- //
+// --------------- 3 range of numbers---------------- //
 
-
+// let startRange = 2;
+// let endRange = 4;
+// let sum = 0;
+//   while(startRange <= endRange) {       
+//     sum += startRange;  
+//     startRange++;
+//   }
+// console.log(sum);
 
 
