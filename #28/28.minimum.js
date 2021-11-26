@@ -49,3 +49,22 @@
 //   return a * factorial(a - 1);
 // }
 // console.log(factorial(a - 1));
+
+// -------------- 5 ------------------
+
+// function splitNumber(a, b, c) {
+//   return Number(String(a)+b+c);
+// }
+// console.log(splitNumber(1, 4, 9));
+
+// -------------- 6 - square area-----------------
+
+// function squareArea(a, b) {
+//   if (isNaN(b)) {
+//     return (a * a);
+//   } else {
+//     return (a * b);
+//   }
+// }
+// // console.log(squareArea(2));
+// console.log(squareArea(2, 6));
