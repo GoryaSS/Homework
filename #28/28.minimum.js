@@ -1,9 +1,27 @@
 // -------------- 1 ------------------
-
-// function newFunc() {
+//  1.1 Function Declaration
+// function funcMetod() {
 //     console.log('Hello World');
 // }
-// newFunc();
+// funcMetod();
+
+// 1.2 Function Expresion
+// let funcMetod = function() {
+//   console.log('Hi!');
+// }
+// funcMetod();
+
+// 1.3.1 arrow functions (single-line)
+// let funcMetod = (text, name) => text + ', ' + name + '!';
+// console.log(funcMetod('Hi', 'everyone!'));
+
+// 1.3.2 arrow functions (multiline)
+// let funcMetod = (text, name) => {
+//   let massage = text + ', ' + name + '!';
+//   return massage;
+// };
+// console.log(funcMetod('Hi', 'everyone!'));
+
 
 // -------------- 2 ------------------
 
@@ -23,10 +41,10 @@
 
 // -------------- 4 ------------------
 
-function factorial(a) {
-  if (a === 0) {
-    return 1;
- }
-  return a * factorial(a-1);  
-}
-console.log(factorial(5));
+// function factorial(a) {
+//   if (a === 0) {
+//     return 1;
+//  }
+//   return a * factorial(a-1);  
+// }
+// console.log(factorial(5));
