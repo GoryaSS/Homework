@@ -1,64 +1,70 @@
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // 26.1 Типи даних та оператори/ МІНІМУМ/ Виконай додавання 0,1 і 0,2 добийся математично правильної відповіді.
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// let firtNumber = 0.1;
-// let secondNumber = 0.2;
-// let sum = (firtNumber + secondNumber);
-// console.log(sum.toFixed(1));
+let firtNumber = 0.1;
+let secondNumber = 0.2;
+let sum = (firtNumber + secondNumber);
+console.log(sum.toFixed(1));
 // ---------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------
 
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // 26.2 Типи даних та оператори/ МІНІМУМ/ Виконай додавання рядка "1" і цифри 2 (обидві операнди повинні бути в змінних), добийся математично правильної відповіді.
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// let firtNumber = 111;
-// let secondNumber = 2;
-// let sum = (+firtNumber + secondNumber);
-// console.log(sum.toFixed(1));
+let firtNumber = 111;
+let secondNumber = 2;
+let sum = (+firtNumber + secondNumber);
+console.log(sum.toFixed(1));
 // ---------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------
 
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // 26.3 Типи даних та оператори/ МІНІМУМ/ Користувач вказує обсяг флешки в Гб. Програма повинна порахувати скільки файлів розміром в 820 Мб поміщається на флешку.
 // грубий аналог використання Math.floor
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// let memory = prompt('Enter memory size in Gb', 8);
-// let fileSize = 0.82;
-// alert(~~(memory / fileSize));
+let memory = prompt('Enter memory size in Gb', 8);
+let fileSize = 0.82;
+alert(~~(memory / fileSize));
 // ---------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------
 
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // 26.1 Типи даних та оператори/ НОРМА/ Користувач вводить суму грошей в гаманці і ціну однієї шоколадки. Програма виводить скільки шоколадок може купити користувач і скільки здачі у нього залишиться.
 // грубий аналог використання Math.floor
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// let cashAmounth = prompt('How many money do You have?', 8);
-// let chocolateСost = 1.280;
-// let textPre = "You can bay ";
-// let chocolateAmount = ~~(cashAmounth / chocolateСost);
-// let textAfter = " chocolates \nand you will have ";
-// let cashBalance = (cashAmounth - chocolateAmount * chocolateСost);
-// alert(textPre + chocolateAmount + textAfter + cashBalance + ' USD');
+let cashAmounth = prompt('How many money do You have?', 8);
+let chocolateСost = 1.280;
+let textPre = "You can bay ";
+let chocolateAmount = ~~(cashAmounth / chocolateСost);
+let textAfter = " chocolates \nand you will have ";
+let cashBalance = (cashAmounth - chocolateAmount * chocolateСost);
+alert(textPre + chocolateAmount + textAfter + cashBalance + ' USD');
 // ---------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------
 
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // 26.2 Типи даних та оператори/ НОРМА/ Запитай у користувача тризначне число і виведи його задом наперед. Для вирішення завдання тобі знадобиться оператор% (залишок від ділення).
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// let number = 598;
-// lastNumber = number % 10;
-// number -= lastNumber;
-// number /= 10;
-// midleNumber = number % 10;
-// number -= midleNumber;
-// number /= 10;
-// console.log(Number(String(lastNumber) + midleNumber + number));
+let number = 598;
+lastNumber = number % 10;
+number -= lastNumber;
+number /= 10;
+midleNumber = number % 10;
+number -= midleNumber;
+number /= 10;
+console.log(Number(String(lastNumber) + midleNumber + number));
 // ---------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------
 
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // 26.1 Типи даних та оператори/ МАКСИМУМ/ Запитай у користувача тризначне число і виведи його задом наперед. Для вирішення завдання тобі знадобиться оператор% (залишок від ділення).
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// let deposit = 598;
-// let anualRate = 5;
-// let monthlyRate = anualRate / 100 / 12; 
-// console.log(monthlyRate * deposit * 2);
+let deposit = 598;
+let anualRate = 5;
+let monthlyRate = anualRate / 100 / 12; 
+console.log(monthlyRate * deposit * 2);
