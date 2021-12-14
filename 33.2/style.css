@@ -1,0 +1,33 @@
+#grid {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#grid th, td {
+  padding: 2px 10px;
+  border: 1px solid #000;
+}
+
+#grid th {
+  background-color: #999;
+}
+
+#grid tr:nth-child(even) {
+  background-color: #E5E5E5;
+}
+
+#grid th:hover {
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+}
+
+#grid .a-z::before {
+  content: '\25BC\00a0';
+  font-size: 70%;
+}
+
+#grid .z-a::before {
+  content: '\25B2\00a0';
+  font-size: 70%;
+}
