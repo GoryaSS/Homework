@@ -1,0 +1,78 @@
+:root {
+  --course-fnt-size: 64px;
+  --course-fnt-color: red;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.playground {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "headerCrs headerCrs"
+    "asideCrs mainCrs"
+    "footerCrs footerCrs";
+  grid-template-columns: 360px 1fr;
+  grid-template-rows: 64px 1fr 64px;
+  background-color: rgba(218, 193, 193, 0.842);
+}
+@media (max-width: 800px) {
+  .playground {
+    grid-template-areas:
+      "headerCrs"
+      "asideCrs"
+      "mainCrs"
+      "footerCrs";
+    grid-template-columns: 1fr;
+    grid-template-rows: 64px max-content 1fr 64px;
+  }
+}
+#header-course {
+  grid-area: headerCrs;
+  box-shadow: 2px 2px 4px grey;
+}
+#aside-course {
+  grid-area: asideCrs;
+  box-shadow: 2px 2px 4px grey;
+}
+#main-course {
+  grid-area: mainCrs;
+}
+#footer-course {
+  grid-area: footerCrs;
+  box-shadow: 2px 2px 40px grey;
+  color: rgb(226, 161, 20);
+  text-align: center;
+  line-height: 60px;
+  font-size: var(--course-fnt-size);
+}
+
+.place-course {
+  color: var(--course-fnt-color);
+  font-size: calc(var(--course-fnt-size) * 2);
+}
+
+h2.place-course {
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+h2.place-course:hover {
+  color: aqua;
+}
+
+.aut-course {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  width: 460px;
+  grid-template-rows: repeat (3, 2em);
+  gap: 8px;
+}
+
+form button {
+  grid-area: 3 / 2;
+  justify-self: end;
+  cursor: pointer;
+}
