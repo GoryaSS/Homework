@@ -43,7 +43,7 @@
 #footer-course {
   grid-area: footerCrs;
   box-shadow: 2px 2px 40px grey;
-  color: rgb(226, 161, 20);
+  color: rgb(79, 225, 145);
   text-align: center;
   line-height: 60px;
   font-size: var(--course-fnt-size);

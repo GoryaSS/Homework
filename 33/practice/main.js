@@ -22,6 +22,7 @@ function createDoc() {
   placeHolder.className = 'place-course';
   placeHolder.addEventListener('click', handlerPlaceHolder);
 
+  headerCourse.append(navMenu());
   mainCourse.append(placeHolder);
   mainCourse.append(autUser());
 
