@@ -1,10 +1,13 @@
 :root {
-  --course-fnt-size: 64px;
+  --course-fnt-size: 40px;
   --course-fnt-color: red;
+  --header-fnt-color: rgb(20, 42, 167);
 }
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: black;
 }
 
 .playground {
@@ -48,10 +51,48 @@
   line-height: 60px;
   font-size: var(--course-fnt-size);
 }
+.nav_comp {
+  height: 100%;
+}
+.nav_list {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  text-align: center;
+}
+.nav_item a {
+  position: relative;
+  width: 100px;
+
+  color: var(--header-fnt-color);
+  transition: all 0.3s ease-in-out;
+}
+.nav_item a:hover {
+  color: var(--course-fnt-color);
+}
+.nav_item a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -3px;
+  border-bottom: 3px solid rgb(187, 0, 0);
+  transform: scaleX(0);
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav_item a:hover::before {
+  transform: scaleX(1);
+  transform: scaleX(1);
+}
 
 .place-course {
   color: var(--course-fnt-color);
   font-size: calc(var(--course-fnt-size) * 2);
+  transition: all 0.3s ease-in-out;
 }
 
 h2.place-course {

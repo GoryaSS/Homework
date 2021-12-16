@@ -15,14 +15,15 @@ function createDoc() {
   asideCourse.setAttribute('id', 'aside-course');
   mainCourse.setAttribute('id', 'main-course');
   footerCourse.setAttribute('id', 'footer-course');
-  footerCourse.textContent = 'AAAAAAAAAAAA';
+  footerCourse.textContent = 'JS Course Beetroot';
   
   const placeHolder = document.createElement('h2');
-  placeHolder.append('Welcome dear Ihor');
+  placeHolder.append('Welcome, dear stranger');
   placeHolder.className = 'place-course';
   placeHolder.addEventListener('click', handlerPlaceHolder);
 
-  headerCourse.append(navMenu());
+  headerCourse.append(navComp);
+  navComp.append(navList);
   mainCourse.append(placeHolder);
   mainCourse.append(autUser());
 
@@ -32,3 +33,6 @@ function handlerPlaceHolder() {
 }
 
 createDoc();
+
+
+
