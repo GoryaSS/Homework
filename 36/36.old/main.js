@@ -1,18 +1,26 @@
 import { autUser } from './components/aut.js'
 
-
 function createDoc() {  
-  const headerCourse = document.querySelector('#header-course');
+  const rootEl = document.querySelector('.playground');
+  const headerCourse = document.createElement('header');
+  const asideCourse = document.createElement('aside');
+  const mainCourse = document.createElement('main');
+  const footerCourse = document.createElement('footer');
+ 
+  rootEl.append(headerCourse);
+  rootEl.append(asideCourse);
+  rootEl.append(mainCourse);
+  rootEl.append(footerCourse);
 
-  const mainCourse = document.querySelector('#main-course')
-  const footerCourse = document.querySelector('#footer-course');
-  footerCourse.textContent = 'JS Course Beetroot';  
 
-  const loginCourse = document.querySelector('.nav_item');
-  // loginCourse.addEventListener('click', (e) =>
-  //   handlerPlaceHolder(e, placeHolder, autUser()));
-
+  headerCourse.setAttribute('id', 'header-course');
+  asideCourse.setAttribute('id', 'aside-course');
+  mainCourse.setAttribute('id', 'main-course');
+  footerCourse.setAttribute('id', 'footer-course');
+  footerCourse.textContent = 'JS Course Beetroot';
+  
   const placeHolder = document.createElement('h2');
+
   let userName = localStorage.getItem('nameUser');
   if (userName) {
     placeHolder.append(`Welcome, dear ${userName}`);

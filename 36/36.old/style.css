@@ -1,12 +1,10 @@
 @import url("./components/auth.css");
-@import url("./components/nav.css");
 
 :root {
   --course-fnt-size: 40px;
   --course-fnt-color: red;
   --header-fnt-color: rgb(20, 42, 167);
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +23,6 @@
   grid-template-rows: 64px 1fr 64px;
   background-color: rgba(218, 193, 193, 0.842);
 }
-
 @media (max-width: 800px) {
   .playground {
     grid-template-areas:
@@ -37,21 +34,17 @@
     grid-template-rows: 64px max-content 1fr 64px;
   }
 }
-
 #header-course {
   grid-area: headerCrs;
   box-shadow: 2px 2px 4px grey;
 }
-
 #aside-course {
   grid-area: asideCrs;
   box-shadow: 2px 2px 4px grey;
 }
-
 #main-course {
   grid-area: mainCrs;
 }
-
 #footer-course {
   grid-area: footerCrs;
   box-shadow: 2px 2px 40px grey;
@@ -59,6 +52,45 @@
   text-align: center;
   line-height: 60px;
   font-size: var(--course-fnt-size);
+}
+.nav_comp {
+  height: 100%;
+}
+.nav_list {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  text-align: center;
+}
+.nav_item a {
+  position: relative;
+  width: 100px;
+
+  color: var(--header-fnt-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav_item a:hover {
+  color: var(--course-fnt-color);
+}
+
+.nav_item a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -3px;
+  border-bottom: 3px solid rgb(187, 0, 0);
+  transform: scaleX(0);
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav_item a:hover::before {
+  transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .place-course {
