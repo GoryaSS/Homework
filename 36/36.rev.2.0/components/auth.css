@@ -1,0 +1,30 @@
+#main-course {
+  align-self: center;
+  justify-self: center;
+}
+.aut-course {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: repeat (3, 2em);
+  gap: 8px;
+}
+
+form {
+  width: 460px;
+  border: 1px solid rgb(250, 219, 140);
+  align-self: center;
+  justify-self: center;
+  padding: 16px;
+}
+form label {
+  color: #fff;
+}
+
+.aut-course_send-button {
+  grid-area: 3 / 2;
+  justify-self: end;
+  cursor: pointer;
+  color: #000;
+  text-transform: uppercase;
+  padding: 0 5px;
+}

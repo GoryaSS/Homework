@@ -16,6 +16,7 @@ export function autUser() {
 
   const butSend = document.createElement('input');
   butSend.setAttribute('type', 'submit');
+  butSend.setAttribute('class', 'aut-course_send-button');
   butSend.textContent = 'Send';
   butSend.addEventListener('click', sendForm)
 
@@ -29,11 +30,8 @@ export function autUser() {
 }
 
 function sendForm(igor) {
-  // igor.preventDefault();
   let userName = document.forms['user-data'].nameuser;
   let pasName =  document.forms['user-data'].passworduser;
   localStorage.setItem('nameUser', userName.value);
-  
-  
-  // console.log("", userName.value, pasName.value);
+  localStorage.setItem('passwordUser', pasName.value);
 }

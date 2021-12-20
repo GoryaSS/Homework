@@ -1,10 +1,11 @@
 @import url("./components/auth.css");
 @import url("./components/nav.css");
+@import url("./components/content.css");
 
 :root {
   --course-fnt-size: 40px;
-  --course-fnt-color: red;
-  --header-fnt-color: rgb(20, 42, 167);
+  --course-fnt-color: orange;
+  --header-fnt-color: rgb(255, 255, 255);
 }
 
 * {
@@ -12,6 +13,7 @@
   padding: 0;
   text-decoration: none;
   color: black;
+  font-family: isocpeur;
 }
 
 .playground {
@@ -23,7 +25,7 @@
     "footerCrs footerCrs";
   grid-template-columns: 360px 1fr;
   grid-template-rows: 64px 1fr 64px;
-  background-color: rgba(218, 193, 193, 0.842);
+  background-color: rgb(81, 81, 81);
 }
 
 @media (max-width: 800px) {
@@ -50,12 +52,18 @@
 
 #main-course {
   grid-area: mainCrs;
+  box-shadow: 2px 2px 4px grey;
+  display: grid;
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
 }
 
 #footer-course {
   grid-area: footerCrs;
   box-shadow: 2px 2px 40px grey;
-  color: rgb(79, 225, 145);
+  color: var(--course-fnt-color);
   text-align: center;
   line-height: 60px;
   font-size: var(--course-fnt-size);

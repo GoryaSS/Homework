@@ -1,0 +1,85 @@
+@import url("./components/auth.css");
+@import url("./components/nav.css");
+
+:root {
+  --course-fnt-size: 40px;
+  --course-fnt-color: orange;
+  --header-fnt-color: rgb(255, 255, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+  font-family: isocpeur;
+}
+
+.playground {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "headerCrs headerCrs"
+    "asideCrs mainCrs"
+    "footerCrs footerCrs";
+  grid-template-columns: 360px 1fr;
+  grid-template-rows: 64px 1fr 64px;
+  background-color: rgb(81, 81, 81);
+}
+
+@media (max-width: 800px) {
+  .playground {
+    grid-template-areas:
+      "headerCrs"
+      "asideCrs"
+      "mainCrs"
+      "footerCrs";
+    grid-template-columns: 1fr;
+    grid-template-rows: 64px max-content 1fr 64px;
+  }
+}
+
+#header-course {
+  grid-area: headerCrs;
+  box-shadow: 2px 2px 4px grey;
+}
+
+#aside-course {
+  grid-area: asideCrs;
+  box-shadow: 2px 2px 4px grey;
+}
+
+#main-course {
+  grid-area: mainCrs;
+  box-shadow: 2px 2px 4px grey;
+  display: grid;
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+}
+
+#footer-course {
+  grid-area: footerCrs;
+  box-shadow: 2px 2px 40px grey;
+  color: var(--course-fnt-color);
+  text-align: center;
+  line-height: 60px;
+  font-size: var(--course-fnt-size);
+}
+
+.place-course {
+  color: var(--course-fnt-color);
+  font-size: calc(var(--course-fnt-size) * 2);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+h2.place-course {
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h2.place-course:hover {
+  color: aqua;
+}
