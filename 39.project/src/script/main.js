@@ -29,12 +29,15 @@ function createDoc() {
     const mainCourse = document.querySelector('#main-course');
     handlerPlaceHolder(e, mainCourse.firstChild, dataContent);
   });
-  
+  // кнопка абаут - скидає локал сторедж і переносить на домашню сторінку
   const aboutCourse = document.querySelector('#about-course');
-  aboutCourse.onclick = () => localStorage.clear();
-  
+  aboutCourse.onclick = () => localStorage.clear(window.location.reload());
+  // кнопка хоум - переносить на домашню сторінку
   const homeCourse = document.querySelector('.course-home');
   homeCourse.onclick = () => window.location.reload();
+  // клік по лого - переносить на домашню сторінку
+  const logoCourse = document.querySelector('.logo-course');
+  logoCourse.onclick = () => window.location.reload();
 
   const placeHolder = document.querySelector('.place-course');
   let userName = localStorage.getItem('nameUser');

@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "isocpeur";
+  src: url("isocpeur-isocpeur.eot");
+  src: url("isocpeur-isocpeur.eot?#iefix") format("embedded-opentype"),
+    url("isocpeur-isocpeur.woff2") format("woff2"),
+    url("isocpeur-isocpeur.woff") format("woff"),
+    url("isocpeur-isocpeur.ttf") format("truetype"),
+    url("isocpeur-isocpeur.svg#isocpeurregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,6 +1,7 @@
 @import url("./components/auth.css");
 @import url("./components/nav.css");
 @import url("./components/content.css");
+@import url("components/fonts/stylesheet.css");
 
 :root {
   --course-fnt-size: 40px;
