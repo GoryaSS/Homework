@@ -1,0 +1,57 @@
+header .container {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  height: 10vh;
+  /* grid-template-columns: 200px; */
+  /* grid-template-rows: repeat(6, 1fr); */
+  background: cornflowerblue;
+}
+
+.navbar__list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  list-style: none;
+}
+
+.logo .icon-play {
+  color: white;
+  padding-left: 10px;
+  font-size: 30px;
+}
+
+.navbar__item {
+  display: flex;
+}
+
+.navbar__item a {
+  color: white;
+}
+
+.navbar__item form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbar__item [type="submit"] {
+  display: flex;
+  outline: none !important;
+  border: none;
+  cursor: pointer;
+  background: none;
+  position: absolute;
+  color: white;
+  font-size: 30px;
+}
+
+.navbar__item input {
+  outline: none !important;
+  border: none;
+  cursor: pointer;
+  /* visibility: hidden; */
+}
+.navbar__item input::placeholder {
+  color: brown;
+}

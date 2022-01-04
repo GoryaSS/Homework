@@ -1,22 +1,11 @@
-@import url("./components/auth.css");
-@import url("./components/nav.css");
-@import url("./components/content.css");
-@import url("components/fonts/stylesheet.css");
+@import url("base/res.css");
+@import url("base/var.css");
+@import url("../fonts/icons/logo/style.css");
+@import url("../fonts/icons/search/style.css");
+@import url("../fonts/isocpeur/isocpeur.css");
+@import url("sections/header.css");
 
-:root {
-  --course-fnt-size: 40px;
-  --course-fnt-color: orange;
-  --header-fnt-color: rgb(255, 255, 255);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  color: black;
-  font-family: isocpeur;
-}
-
+/* oldoldoldoldoldoldoldoldoldoldoldoldoldoldoldoldoldoldoldold */
 .playground {
   display: grid;
   height: 100vh;
