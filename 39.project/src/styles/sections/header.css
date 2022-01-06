@@ -4,15 +4,18 @@ header .container {
   align-items: center;
   height: 10vh;
   /* grid-template-columns: 200px; */
-  /* grid-template-rows: repeat(6, 1fr); */
+  grid-template-columns: 1fr 4fr;
   background: cornflowerblue;
 }
-
+.logo {
+  max-width: 10%;
+}
 .navbar__list {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  justify-items: center;
+  /* justify-items: center; */
   list-style: none;
+  margin: 0 50px;
 }
 
 .logo .icon-play {
@@ -27,6 +30,7 @@ header .container {
 
 .navbar__item a {
   color: white;
+  text-transform: uppercase;
 }
 
 .navbar__item form {
@@ -35,7 +39,7 @@ header .container {
   position: relative;
 }
 
-.navbar__item [type="submit"] {
+.navbaf__form-button {
   display: flex;
   outline: none !important;
   border: none;
@@ -46,12 +50,12 @@ header .container {
   font-size: 30px;
 }
 
-.navbar__item input {
+.navbaf__form-item {
   outline: none !important;
   border: none;
   cursor: pointer;
   /* visibility: hidden; */
 }
-.navbar__item input::placeholder {
+.navbaf__form-item::placeholder {
   color: brown;
 }
